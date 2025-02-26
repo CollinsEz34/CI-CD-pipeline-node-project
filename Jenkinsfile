@@ -1,9 +1,6 @@
 pipeline {
-    agent {
-        node {
-            label 'node-agent'  // Ensure this matches your Node.js agent label in Jenkins
-        }
-    }
+    agent any
+    
     stages {
         stage('Checkout') {
             steps {
