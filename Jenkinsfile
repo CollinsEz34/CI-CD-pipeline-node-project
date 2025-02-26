@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    
+
     stages {
         stage('Checkout') {
             steps {
@@ -13,14 +13,14 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 script {
-                    sh 'npm install'  // Installs dependencies from package.json
+                    bat 'npm install'  // Installs dependencies from package.json
                 }
             }
         }
         stage('Build') {
             steps {
                 script {
-                    sh 'npm run build'  // Run the build command (ensure it's defined in package.json)
+                    bat 'npm run build'  // Run the build command (ensure it's defined in package.json)
                 }
             }
         }
