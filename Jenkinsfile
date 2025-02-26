@@ -8,7 +8,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main', 
-                url: 'git@github.com:CollinsEz34/CI-CD-pipeline-node-project.git'
+                url: 'git@github.com:CollinsEz34/CI-CD-pipeline-node-project.git',
                 branch: 'main'
             }
         }
