@@ -9,7 +9,8 @@ pipeline {
             steps {
                 git branch: 'main', 
                 url: 'git@github.com:CollinsEz34/CI-CD-pipeline-node-project.git',
-                branch: 'main'
+                credentialsId: 'b8d10bc7-e783-48c0-8e18-54ccaf069b22 '
+        
             }
         }
         stage('Install Dependencies') {
