@@ -17,10 +17,10 @@ pipeline {
                 }
             }
         }
-        stage('Build') {
+        stage('Test'){
             steps {
                 script {
-                    bat 'npm run build'  // Run the build command (ensure it's defined in package.json)
+                    bat 'npm test'
                 }
             }
         }
